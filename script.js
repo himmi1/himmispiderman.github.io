@@ -16,6 +16,5 @@ function calculateFuelConsumption() {
     // Calculate total cost of fuel
     var totalCost = fuelConsumption * pricePerLiter;
 
-    resultElement.innerHTML = "Eldsneytis eyðsla: " + fuelConsumption.toFixed(2) + " Lítrar<br>"
-        + "Samtals Verð: ISK " + totalCost.toFixed(2) + "kr";
+    resultElement.innerHTML = "Samtals Verð: ISK " + totalCost.toFixed(2) + "kr";
 }
