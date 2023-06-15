@@ -10,6 +10,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // For example, you might send an email or store the data in a database
 
     // Redirect to a thank you page or display a success message
+    header("Location: thank-you.html");
     exit;
 }
 ?>
