@@ -1,0 +1,76 @@
+/* Styles for Fuel Consumption Calculator */
+
+/* Body and container */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin: 20px auto;
+  padding: 100px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5  px;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 0;
+}
+
+/* Input fields */
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+/* Calculate button */
+button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Result */
+.result {
+  border: 3px solid #0056b3;
+  border-radius: 5px;
+  margin-top: 50px;
+  margin: 20px;
+  padding: 10px;
+  text-align: center  ;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.error {
+  color: red;
+}
