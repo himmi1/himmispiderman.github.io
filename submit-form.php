@@ -6,8 +6,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $subject = $_POST["subject"];
     $message = $_POST["message"];
 
-    // Process the form data (you can customize this based on your requirements)
-    // For example, you might send an email or store the data in a database
+    // Format the data as a string
+    $data = "Name: $name\nEmail: $email\nSubject: $subject\nMessage: $message\n\n";
+
+    // Specify the file path to save the data
+    $filePath = "form-data.txt";
+
+    // Write the data to the file
+    file_put_contents($filePath, $data, FILE_APPEND | LOCK_EX);
 
     // Redirect to a thank you page or display a success message
     header("Location: thank-you.html");
